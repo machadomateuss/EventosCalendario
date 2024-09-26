@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> | App de Calendário de Eventos | </title>
+</head>
+
+<body>
+
+    <div class="planejador">
+        <h1>Calendário de Eventos &#x1F4C3; </h1>
+        <div id="calendario" class="grade-calendario"></div>
+    </div>
+
+    <button class="btn-adicionar-tarefa" onclick="mostrarModalAdicionarTarefa()">Adicionar Tarefa</button>
+
+    <div id="modalAdicionarTarefa" class="modal">
+        <div class="conteudo-modal">
+            <span class="fechar" onclick="fecharModalAdicionarTarefa()">&times;</span>
+            <h2>Adicionar Tarefa</h2>
+            <input type="date" id="data-tarefa">
+            <input type="text" id="descricao-tarefa" placeholder="Descrição da Tarefa" autocomplete="off">
+            <button onclick="adicionarTarefa()">Adicionar Tarefa</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
